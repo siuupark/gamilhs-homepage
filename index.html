@@ -206,13 +206,6 @@
     </div>
 </section>
 
-<section id="meal-plan-section" class="container text-center">
-    <h2 class="mb-4">🍱 우리 학교 급식표</h2>
-    <div class="meal-box mx-auto">
-        <p id="meal-content">급식 정보를 불러오는 중입니다...</p>
-    </div>
-</section>
-
 <script>
     const scheduleData = {
         "2025-02": [ { "date": "2025.02.06", "event": "종업식" } ],
@@ -287,7 +280,16 @@
             view.classList.remove("active");
         });
         document.getElementById(selected).classList.add("active");
+
+        
     });
+
+    <section id="meal-plan-section" class="container text-center">
+    <h2 class="mb-4">🍱 우리 학교 급식표</h2>
+    <div class="meal-box mx-auto">
+        <p id="meal-content">급식 정보를 불러오는 중입니다...</p>
+    </div>
+</section>
 
     const API_KEY = "22ee5606f6974dd98d68108d6646cda7"; 
     const EDU_OFFICE_CODE = "J10"; 
